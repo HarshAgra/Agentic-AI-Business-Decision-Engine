@@ -1,6 +1,8 @@
 import os
 from openai import AzureOpenAI
 from dotenv import load_dotenv
+import streamlit as st
+st.write(st.secrets)
 
 load_dotenv()
 
