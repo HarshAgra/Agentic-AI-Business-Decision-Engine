@@ -9,7 +9,7 @@ load_dotenv()
 client = AzureOpenAI(
     api_key=st.secrets["AZURE_OPENAI_API_KEY"],
     api_version="2024-02-15-preview",
-    azure_endpoint=st.secrets("AZURE_OPENAI_ENDPOINT")
+    azure_endpoint=st.secrets["AZURE_OPENAI_ENDPOINT"]
 )
 
 def call_llm(prompt):
